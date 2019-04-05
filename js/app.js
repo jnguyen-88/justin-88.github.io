@@ -249,7 +249,9 @@ window.onload = function onLoad() {
 const contactBtn = document.querySelector("#contact-pop");
 
 contactBtn.addEventListener('click', function(){
-    console.log('hello')
+    $('#cardModal').modal({
+        show: true
+    });
 })
 
 

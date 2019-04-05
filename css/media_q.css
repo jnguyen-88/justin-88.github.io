@@ -1,6 +1,7 @@
 @media (min-width: 720px) {
   header {
     display: flex;
+    display: -webkit-flexbox;
   }
 
   .profile-img {

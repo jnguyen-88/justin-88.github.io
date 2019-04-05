@@ -6,6 +6,7 @@
   font-family: 'Roboto Mono', monospace;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  list-style: none;
 }
 
 /*462 px*/
@@ -14,9 +15,7 @@
 Header
 ==============*/
 header {
-  /*background-color: #eaeaea;*/
-  background-color: red;
-
+  background-color: #eaeaea;
 }
 
 .profile-img img {
@@ -56,6 +55,7 @@ header {
 
 .header-nav-links {
   display: flex;
+  display: -webkit-flexbox;
 }
 
 .header-nav-links a {
@@ -65,6 +65,7 @@ header {
 
 .header-icon-box {
   display: flex;
+  display: -webkit-flexbox;
   flex-direction: column;
   justify-content: center;
 
@@ -91,12 +92,14 @@ About
   padding: 5rem;
 
   display: flex;
+  display: -webkit-flexbox;
   flex-direction: column;
   align-items: center;
 }
 
 .personal-box {
   display: flex;
+  display: -webkit-flexbox;
   align-items: center;
   flex-direction: column;
 
@@ -105,6 +108,7 @@ About
 
 .flex {
   display: flex;
+  display: -webkit-flexbox;
   flex-direction: column;
   align-items: center;
 }
@@ -140,6 +144,7 @@ Skills
 
 .skills-flex {
   display: flex;
+  display: -webkit-flexbox;
   flex-direction: column;
 }
 
@@ -147,6 +152,7 @@ Skills
 
 .skills-box-flex {
   display: flex;
+  display: -webkit-flexbox;
   flex-direction: column;
   align-items: center;
 }
@@ -172,11 +178,13 @@ Portfolio
 
 .portfolio-wrap {
   display: flex;
+  display: -webkit-flexbox;
   flex-direction: column;
 }
 
 .portfolio-box {
   display: flex;
+  display: -webkit-flexbox;
   flex-direction: column;
 
   text-align: center;
@@ -186,6 +194,7 @@ Portfolio
 
 .project-info {
   display: flex;
+  display: -webkit-flexbox;
   flex-direction: column;
 
   padding: 1.2rem;
@@ -246,6 +255,7 @@ Footer
 ==============*/
 footer {
   display: flex;
+  display: -webkit-flexbox;
   flex-direction: column;
 
   background-color: #494949;
@@ -258,6 +268,7 @@ footer > p {
 
 .footer-flex {
   display: flex;
+  display: -webkit-flexbox;
   justify-content: space-around;
 }
 
@@ -282,9 +293,51 @@ footer span {
 Popup
 ==============*/
 
-/*.popup-flex {
+#popup {
+  width: 100%;
+}
+
+.popup-flex {
   display: flex;
-}*/
+  display: -webkit-flexbox;
+}
+
+.popup-contact {
+  display: flex;
+  display: -webkit-flexbox;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.popup-logo-box,
+.popup-contact {
+  width: 50%;
+}
+
+.popup-logo-box img {
+  width: 100%;
+}
+
+.popup-item {
+  display: flex;
+  display: -webkit-flexbox;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.popup-item i {
+  font-size: 20px;
+}
+
+.popup-item span {
+  font-size: 13px;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
 
 /*=============
 Misc.
