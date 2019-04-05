@@ -16,6 +16,7 @@ Header
 ==============*/
 header {
   background-color: #eaeaea;
+  max-height: 300px;
 }
 
 .profile-img img {

@@ -55,7 +55,7 @@ window.onload = function onLoad() {
         circle.path.setAttribute('stroke', state.color);
     },
     warnings: false
-})
+});
 
     htmlSemiCircle.animate(.95);
 
@@ -116,9 +116,9 @@ window.onload = function onLoad() {
         circle.path.setAttribute('stroke', state.color);
     },
     warnings: false
-})
+});
 
-    cssSemiCircle.animate(.90);
+    cssSemiCircle.animate(0.90);
 
 
         // JS Progress
@@ -177,9 +177,9 @@ window.onload = function onLoad() {
         circle.path.setAttribute('stroke', state.color);
     },
     warnings: false
-})
+});
 
-    jsSemiCircle.animate(.80);
+    jsSemiCircle.animate(0.80);
 
 
 
@@ -239,20 +239,11 @@ window.onload = function onLoad() {
         circle.path.setAttribute('stroke', state.color);
     },
     warnings: false
-})
+});
 
-    rubySemiCircle.animate(.30);
+    rubySemiCircle.animate(0.30);
 };
 
-
-// Contact popup
-const contactBtn = document.querySelector("#contact-pop");
-
-contactBtn.addEventListener('click', function(){
-    $('#cardModal').modal({
-        show: true
-    });
-})
 
 
 
