@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/*462 px*/
+
+/*=============
+Header
+==============*/
+header {
+  /*background-color: #eaeaea;*/
+  background-color: red;
+
+}
+
+.profile-img img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.name {
+  display: table;
+
+  background-color: #7d8084;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  color: #fff;
+}
+
+.name span,
+.info span {
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.info {
+  display: table;
+
+  background-color: #494949;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  color: #fff;
+}
+
+.header-nav-links {
+  display: flex;
+}
+
+.header-nav-links a {
+  width: 100%;
+  text-decoration: none;
+}
+
+.header-icon-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100px;
+}
+
+.header-icon-box span {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.header-icon-box .fas {
+  font-size: 3rem;
+  margin-bottom: 1.3rem;
+  color: #fff;
+}
+
+
+/*=============
+About
+==============*/
+
+#about {
+  padding: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personal-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 1rem 0;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personal-box .fas,
+.personal-box .far {
+  margin-bottom: .8rem;
+}
+
+.personal-box-info p {
+  color: #707070;
+}
+
+
+
+/*=============
+Skills
+==============*/
+
+#personal-skills {
+  background-color: #eaeaea;
+  padding: 5rem;
+}
+
+#html-progress,
+#css-progress,
+#js-progress,
+#ruby-progress {
+  background-color: transparent;
+  width: 15rem;
+  height: auto;
+}
+
+.skills-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-flex h2 { text-align: center; }
+
+.skills-box-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-box-flex h3 {
+  margin: 2rem;
+  text-align: center;
+}
+
+
+/*=============
+Portfolio
+==============*/
+
+#portfolio {
+  background-color: #f9f9f9;
+  padding: 5rem;
+}
+
+#portfolio h2 {
+  text-align: center;
+}
+
+.portfolio-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-box {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  margin: 1.5rem auto;
+  justify-content: space-between;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.2rem;
+}
+
+/*caption on picture*/
+.portfolio-img-box:hover .portfolio-img-caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+
+/*darkening effect on hover*/
+.portfolio-img-box:hover .portfolio-img {
+  -webkit-filter: brightness(75%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.portfolio-img {
+  -webkit-filter: brightness(100%);
+  width: 100%;
+  border: 2px solid #d8d8d8;
+  padding: 2rem;
+  border-radius: 3px;
+}
+
+.portfolio-img-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  opacity: 0;
+  transition: all .5s;
+  color: #fff;
+  backface-visibility: hidden;
+}
+
+.portfolio-img-box {
+  position: relative;
+  margin: 0 auto;
+  width: 65%;
+}
+
+.tech-used {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #f25a2e;
+}
+
+/*=============
+Footer
+==============*/
+footer {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #494949;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+footer > p {
+  text-align: center;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer h5 {
+  color: #e2e2e2;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+footer p,
+footer span {
+  color: #9b9b9b;
+  font-size: 1.3rem;
+}
+
+.footer-box {
+  width: 33%;
+  text-align: center;
+}
+
+/*=============
+Popup
+==============*/
+
+/*.popup-flex {
+  display: flex;
+}*/
+
+/*=============
+Misc.
+==============*/
+
+.btn {
+  border-radius: 0;
+}
+
+h4 {
+  color: #f25a2e;
+  margin: 1rem 0;
+}
+
+h5 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.fas,
+.far {
+  font-size: 3.8rem;
+}
+
+.fa-arrow-alt-circle-down {
+  font-size: 1.5rem;
+  color: #c6c6c6;
+}
+
+.fa-twitter,
+.fa-github,
+.fa-google-plus {
+  font-size: 1.5rem;
+}
+
+
+
+
+
